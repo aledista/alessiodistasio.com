@@ -1,0 +1,15 @@
+DIV#topBar DIV#years UL LI {
+	FLOAT: left; WIDTH: 84px
+}
+DIV#topBar DIV#years UL LI.lastYear {
+	BORDER-RIGHT-WIDTH: 0px
+}
+DIV#topBar DIV#years {
+	BORDER-RIGHT: #3d3d3d 1px solid; MARGIN-LEFT: 4px
+}
+DIV#header {
+	LEFT: 0px; MARGIN: 0px; POSITION: fixed
+}
+DIV#sidebar UL#sidebarNav {
+	MARGIN-LEFT: -370px
+}

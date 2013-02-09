@@ -1,0 +1,190 @@
+/*=== General settings - v1.0 ===*/
+body {
+	background: url(../../images/bg.gif) repeat-x fixed ;
+	font-family: "Myriad Pro", "Trebuchet Ms", sans-serif;
+	line-height: 22px;
+	color: black;
+}
+
+p {margin-bottom: 15px; }
+p, ul li {  font-size: 13px; font-family: "Lucida Grande", "Lucida Sans", sans-serif;}
+em { font-style: normal;}
+/* links settings */
+a { color: #64991e; text-decoration: none }
+a:hover {text-decoration: underline;}
+
+.resume a{text-decoration: none; color: white; }
+
+#download-resume{
+	background-image: url('../../images/download.png');
+	width: 256px;
+	height: 50px;
+	float: right;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.space{min-height:40px; height:40px;}
+
+.language-used{font-size:12px; color:#666; margin-top: -10px;}
+.job-details{font-size:11px; color:#666; margin-top: -10px;}
+
+#visitors table{ width:400px; color: #41403e; font-size: 15px;}
+#visitors { font-family:"Trebuchet MS"; margin:auto; width:650px; text-align:left; font-size:16px; color:#666; overflow:hidden;}
+#visitors-left{ float: left; width: 145px; }
+#visitors-right{ float: left; width: 505px; }
+#visitors td { font-size:11px; color:#666; text-align:left; } 
+
+.qr{ margin:auto; width:650px; font-size:15px; text-align:center; color: #666; overflow:hidden;}
+#qr-left{ float: left; width: 45px; }
+#qr-right{ float: left; width: 605px;}
+.qr a { font-size:14px; font-weight:bold; }
+
+.rss{ margin:auto; width:650px; font-size:15px; text-align:left; color: #666; font-family:"Trebuchet MS"; overflow:hidden;}
+#rss-left{ float: left; width: 45px; }
+#rss-right{ float: left; width: 605px; }
+.rss a{ font-size:12px; font-weight:bold;}
+
+.twitter{ margin:-20px auto auto auto; width:650px; font-size:15px; text-align:left; color: #666; overflow:hidden;}
+#twitter-left{ float: left; width: 145px; }
+#twitter-right{ float: left; width: 505px;}
+.twitter a{ font-size: 12px;}
+.tweet-details{font-size:10px; color:#666;}
+.tweet-status{font-size:12px; color:#666; font-weight:bold;}
+
+#downloadresume a{color:#64991e; text-decoration: none; font-size: 18px; }
+#downloadresume a:hover{color:#555555; text-decoration: underline; }
+
+.copyright{ margin:auto; width:650px; font-size:15px; text-align:center; color: #666; font-family:"Trebuchet MS"; overflow:hidden;}
+
+.grade-a{color: #007100; font-weight:bold;}
+.grade-b{color: #00a000; font-weight:bold;}
+.grade-c{color: #00c900; font-weight:bold;}
+
+/*////////// //////// //////// ////// //////*/
+/* z- index so the header stay always on top*/
+#wrapHeader { z-index: 100; height: 233px !important; }
+#wrapContent { z-index: 5; }
+
+/*==== HEADER STYLING =====*/
+/* the left:50% and margin-left:-480px helps the header to stay centered all the time*/
+#header{ position: fixed; z-index: 100; background: url(../../images/bg.gif) repeat-x fixed ; overflow: hidden; left: 50%; margin-left: -480px;}
+/* topBar fonts styling */
+#topBar #years ul li, 
+#topBar #years ul li a,
+#topBar #topBarRight h2 { line-height: 52px; text-decoration: none; font-weight: 500; } 
+
+#topBar #years ul li,
+#topBar #years ul li a { font-size: 22px; }
+
+/* Years Nav - Also check ie.css to see the diferent settings for ie7*/
+#topBar #years ul li { border-left: 1px solid #3d3d3d; color: #4d4d4d; width: 108px; height: 52px; display: table-cell; text-align: center; }
+#topBar #years ul li.lastYear { border-right: 1px solid #3d3d3d;}
+#topBar #years ul li a { color: #FFFFFF; } 
+#topBar #years ul li a.active { color: #64991e; } 
+
+/* Right part of the topBar*/
+#topBar #topBarRight h2 { font-size: 30px; color: white; letter-spacing: -1px; margin-left: 40px; }
+#topBar #topBarRight h2 em,
+#topBar #topBarRight a  { color: #64991e; font-style: normal; }
+#topBar #topBarRight img { vertical-align:middle; }
+
+/* Email, Phone and Name part settings */
+#information #info { text-align: right; height: 181px; border-right: 1px solid #dadada; margin-left: 4px;}
+#information #info h2 { font-size: 35px; line-height: 50px; margin: 20px; color: #555555; }
+#information #info h2 em { color: #acacac; }
+#information #name h1 { text-shadow: 0px 0px 0px; font-size: 68px; line-height: 56px; font-weight: 600; text-transform: uppercase; margin: 40px 0 0 40px;}
+#information #name h1 a  { text-decoration: none; color: #555555;}
+#information #name h1 a em { color: #acacac; }
+
+/*======  CONTENT  =====*/
+/* clearing the header since this wrap would go below the header*/
+#wrapContent { clear: both; }
+/* div content holds the jobs and projects */
+#content { border-right: 1px solid #dadada; margin-left: 4px; margin-bottom: 50px; padding-top: 15px; padding-bottom: 40px}
+
+/* styling for each entry on the resume*/
+.resumeEntry { padding-top: 25px; clear: both; }
+.resumeEntry .when  { text-align: right; margin-left: -5px; margin-right: 15px; }
+.resumeEntry .grid_3 p { color: #64991e; font-size: 20px;font-style: italic; font-weight: 100;}
+.resumeEntry div em { color:#bbbbbb; font-size: 16px;}
+.resumeEntry div h3 { color: #555555; font-size: 24px; font-style: italic; margin-bottom: 2px; }
+.resumeEntry div h5 { color: #2bd34c; font-size: 16px; margin-bottom: 10px; }
+.description > * { margin-left: 8px; }
+
+
+/*=====  SIDEBAR ======*/
+/* sidebar Nav settings - ie.css sets some changes to correct minor issue */
+#sidebar ul#sidebarNav { border-top: 1px solid #dadada; position: fixed; width: 1000px; z-index: 100; overflow: hidden;background-color: white; }
+#sidebar ul#sidebarNav { border-bottom: 1px solid #dadada; height: 40px; margin-left: -10px; padding-left: 50px;}
+#sidebar ul#sidebarNav li { display: inline; margin: 0 10px; list-style:disc outside;}
+#sidebar ul#sidebarNav li a { color: #acacac; line-height: 44px; font-size: 18px; text-transform: uppercase; letter-spacing: -1px; text-decoration: none;}
+#sidebar ul#sidebarNav li a:hover { color: #555555;}
+#sidebar ul#sidebarNav li a.active { color: #64991e;}
+
+/* Sidebar Content Settings */
+#sidebarContent {padding: 80px 0 20px 50px; margin: 0; }
+#sidebarContent h4 { font-size: 20px; color: #acacac; font-style: italic; margin-bottom: 20px; }
+#sidebarContent p em { color: #888888;}
+#sidebarContent .sidebarPanel { padding-bottom: 20px; clear: both;}
+#sidebarContent .sidebarPanel p{ font-size:11px;}
+#sidebarContent .sidebarPanel b{ color:#64991e; font-size:13px;}
+#sidebarContent .sidebarPanel .date{ color:#555555; font-size:12px;}
+#sidebarContent .sidebarPanel .uni{ color:#64991e; font-size:12px;}
+#sidebarContent #skills ul{ padding-bottom: 15px; }
+#sidebarContent #skills ul li { line-height: 26px; border-bottom: 1px solid #dadada; width: 140px; padding: 0 4px;}
+#sidebarContent #skills ul li:hover { background-color: #f4f4f4;}
+
+
+.location{ color: #39553c; font-size: 14px; }
+
+.orange{color: #df7d34;}
+
+/* green */
+.green {
+	color: #e8f0de;
+	border: solid 1px #649e14;
+	background: #64991e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+	background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+}
+.green:hover {
+	background: #538018;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
+	background: -moz-linear-gradient(top,  #6b9d28,  #436b0c);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
+}
+.green:active {
+	color: #a9c08c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
+	background: -moz-linear-gradient(top,  #4e7d0e,  #7db72f);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e7d0e', endColorstr='#7db72f');
+}
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
