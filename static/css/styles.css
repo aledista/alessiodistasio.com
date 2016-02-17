@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  color:white;
+  font-family:"Trebuchet Ms", sans-serif;
+}
+
+h2 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+a {
+  cursor: pointer;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
